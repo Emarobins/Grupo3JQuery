@@ -15,6 +15,7 @@ class CategoriaRepository extends Conexion implements CategoriaInterface
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_OBJ);
     }
+    
     public function add(Categoria $categoria)
     {
         $sql = "INSERT INTO categorias (id_categoria, nombre) VALUES (:id_categoria, :nombre)";
