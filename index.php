@@ -1,17 +1,7 @@
 <?php
-$ruta = "";
-$titulo = "Aplicacion de ventas - Inicio";
-include("Paginas/Includes/cabecera.php");
-?>
-<main>
-    <?php
-    include("Paginas/Includes/menu.php");
-    ?>
+// index.php en la raíz
 
-    <!-- tabla -->
-    <h1>Productos</h1>
-    <!-- footer -->
-</main>
-<?php
-include("Paginas/Includes/piedepagina.php");
+// Redirigir a /paginas/index.php
+header("Location: /Grupo3JQuery/paginas/index.php");
+exit(); // Asegúrate de salir después de redirigir
 ?>
