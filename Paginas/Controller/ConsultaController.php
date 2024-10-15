@@ -1,7 +1,9 @@
 <?php
-    include "../includes/cargar_clase.php";
+
+use app\Model\ProductoRepository;
+
     
-    $crudproducto = new CRUDProducto();
+    $ProductoRepository = new ProductoRepository();
 
     if (isset($_POST["cod_prod"])) {
         $cod_prod = $_POST["cod_prod"];
